@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import {
@@ -29,8 +31,8 @@ function LinkedinIcon(props: React.SVGProps<SVGSVGElement>) {
 }
 
 export default function Portfolio() {
-  const [terminalInput, setTerminalInput] = React.useState("");
-  const [terminalLogs, setTerminalLogs] = React.useState<string[]>([
+  const [terminalInput, setTerminalInput] = useState("");
+  const [terminalLogs, setTerminalLogs] = useState<string[]>([
     "Terminal session initialized. Type 'skills', 'experience', 'projects', 'education', or 'contact'.",
   ]);
 
@@ -132,7 +134,7 @@ export default function Portfolio() {
                 Supriya Singh
               </h1>
               <p className="mt-4 text-zinc-300 text-sm md:text-base leading-relaxed max-w-3xl">
-                Technical and solutions-oriented Computer Science graduate with hands-on experience in operational analytics, incident workflows, and AI-driven systems. Skilled in SQL, Python, ro[...]
+                Technical and solutions-oriented Computer Science graduate with hands-on experience in operational analytics, incident workflows, and AI-driven systems. Skilled in SQL, Python, RAG architectures, and data analytics.
               </p>
             </div>
 
@@ -345,7 +347,7 @@ export default function Portfolio() {
               </div>
               <h4 className="text-xl font-bold text-white">NexusEval: AI-Powered Skill Assessment Platform</h4>
               <p className="text-sm text-zinc-400 mt-3 leading-relaxed">
-                Designed and deployed an end-to-end full-stack web application featuring automated candidate resume parsing pipelines, adaptive difficulty testing logic, and dynamic analytics das[...]
+                Designed and deployed an end-to-end full-stack web application featuring automated candidate resume parsing pipelines, adaptive difficulty testing logic, and dynamic analytics dashboards powered by RAG and FAISS.
               </p>
             </div>
             <div className="flex flex-wrap gap-2 mt-6">
